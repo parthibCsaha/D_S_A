@@ -36,7 +36,7 @@ int longestCommonSubsequence(char text1[],char text2[]) {
             else if(dp[i-1][j] > dp[i][j-1]) i--;
             else j--;
         }
-        printf("%s",ch);
+        printf("%s LCS : ",ch);
         printf("\n");
         return dp[n][m];
     }
