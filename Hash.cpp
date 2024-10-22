@@ -1,3 +1,6 @@
+mt19937 rng((uint32_t)chrono::steady_clock::now().time_since_epoch().count());
+const ll B = uniform_int_distribution<ll>(0, M - 1)(rng);
+
 class HashedString {
   private:
 	// change M and B if you want
